@@ -7,6 +7,6 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - id: myValidator
-        uses: snaksa/json-syntax-validator
+        uses: snaksa/json-syntax-validator@main
         with:
           paths: './data/success.json,./data/error.json'
