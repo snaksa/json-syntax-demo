@@ -9,4 +9,4 @@ jobs:
       - id: myValidator
         uses: snaksa/json-syntax-validator@main
         with:
-          paths: './data/*.json'
+          paths: ['./data/*.json']
