@@ -1,0 +1,67 @@
+{
+  "id": "newsletter",
+  "name": {
+    "text": {
+      "EN": "newsletter"
+    }
+  },
+  "fields": [
+    {
+      "id": "email",
+      "display_name": {
+        "text": {
+          "EN": "Email"
+        }
+      },
+      "type": 2,
+      "category_id": "basic_info",
+      "ui_type": 1,
+      "validation_type": 1,
+      "validation_error_message": {
+        "text": {
+          "EN": "Please enter valid email"
+        }
+      },
+      "profile_field_alias": "email",
+      "placeholder": {
+        "text": {
+          "EN": "e.g. john.doe@gmail.com"
+        }
+      }
+    },
+    {
+      "id": "agree_with_terms",
+      "display_name": {
+        "text": {
+          "EN": "I agree to the\u003c!-- --\u003e \u003cspan\u003e\u003ca href=\"/privacy?\u0026amp;tab=terms\"\u003eTerms \u0026amp; Conditions\u003c/a\u003e\u003c/span\u003e \u003c!-- --\u003eand\u003c!-- --\u003e \u003cspan\u003e\u003ca href=\"/privacy?\u0026amp;tab=privacy\"\u003ePrivacy Policy\u003c/a\u003e\u003c/span\u003e."
+        }
+      },
+      "type": 6,
+      "category_id": "basic_info",
+      "ui_type": 10,
+      "validation_type": 2,
+      "validation_error_message": {
+        "text": {
+          "EN": "Please agree to the Terms & Conditions before proceeding"
+        }
+      }
+    }
+  ],
+  "categories": [
+    {
+      "id": "basic_info",
+      "display_name": {
+        "text": {
+          "EN": "Basic info"
+        }
+      },
+      "display_subtitle": {
+        "text": {
+          "EN": "Basic Info subtitle"
+        }
+      }
+    }
+  ],
+  "submit_once": true,
+  "unique_data_key": "email"
+}

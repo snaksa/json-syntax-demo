@@ -1,0 +1,191 @@
+{
+  "id": "user_broker_details",
+  "name": {
+    "text": {
+      "EN": "Broker Registration"
+    }
+  },
+  "fields": [
+    {
+      "id": "is_broker",
+      "display_name": {
+        "text": {
+          "EN": ""
+        }
+      },
+      "type": 4,
+      "category_id": "generic",
+      "ui_type": 4,
+      "validation_type": 2,
+      "validation_error_message": {
+        "text": {
+          "EN": ""
+        }
+      },
+      "allowed_values": [
+        {
+          "id": "true",
+          "display_name": {
+            "text": {
+              "EN": "I am a broker"
+            }
+          },
+          "value": "true",
+          "ui_width": 3
+        },
+        {
+          "id": "false",
+          "display_name": {
+            "text": {
+              "EN": "I am registering my broker"
+            }
+          },
+          "value": "false",
+          "ui_width": 2
+        }
+      ]
+    },
+
+    {
+      "id": "first_name",
+      "display_name": {
+        "text": {
+          "EN": "First Name"
+        }
+      },
+      "type": 2,
+      "category_id": "generic",
+      "ui_type": 1,
+      "validation_type": 2,
+      "validation_error_message": {
+        "text": {
+          "EN": "Please enter first name"
+        }
+      },
+      "placeholder": {
+        "text": {
+          "EN": "Enter first name"
+        }
+      },
+      "ui_width": 1,
+      "optionality": 1
+    },
+
+    {
+      "id": "last_name",
+      "display_name": {
+        "text": {
+          "EN": "Last Name"
+        }
+      },
+      "type": 2,
+      "category_id": "generic",
+      "ui_type": 1,
+      "validation_type": 2,
+      "validation_error_message": {
+        "text": {
+          "EN": "Please enter last name"
+        }
+      },
+      "placeholder": {
+        "text": {
+          "EN": "Enter last name"
+        }
+      },
+      "ui_width": 1,
+      "optionality": 1
+    },
+
+    {
+      "id": "email",
+      "display_name": {
+        "text": {
+          "EN": "Email"
+        }
+      },
+      "type": 2,
+      "category_id": "generic",
+      "ui_type": 1,
+      "ui_width": 1,
+      "validation_type": 1,
+      "validation_error_message": {
+        "text": {
+          "EN": "Please enter a valid email"
+        }
+      },
+      "placeholder": {
+        "text": {
+          "EN": "Email"
+        }
+      },
+      "optionality": 2
+    },
+
+    {
+      "id": "company",
+      "display_name": {
+        "text": {
+          "EN": "Company"
+        }
+      },
+      "type": 2,
+      "category_id": "generic",
+      "ui_type": 1,
+      "validation_type": 2,
+      "validation_error_message": {
+        "text": {
+          "EN": "Please enter company"
+        }
+      },
+      "placeholder": {
+        "text": {
+          "EN": "Enter company"
+        }
+      },
+      "ui_width": 1,
+      "optionality": 2
+    },
+
+    {
+      "id": "phone_number",
+      "display_name": {
+        "text": {
+          "EN": "Phone Number"
+        }
+      },
+      "type": 7,
+      "category_id": "generic",
+      "ui_type": 1,
+      "ui_width": 2,
+      "validation_type": 3,
+      "validation_regex": "/^(\\+\\s?)?(1\\s?)?([0-9]{3}|\\([0-9]{3}\\))[\\s\\-]?[0-9]{3}[\\s\\-]?[0-9]{4}$/",
+      "validation_error_message": {
+        "text": {
+          "EN": "Please enter a valid US phone number"
+        }
+      },
+      "placeholder": {
+        "text": {
+          "EN": "(XXX) XXX-XXXX"
+        }
+      },
+      "optionality": 2
+    }
+  ],
+  "categories": [
+    {
+      "id": "generic",
+      "display_name": {
+        "text": {
+          "EN": "Broker Registration"
+        }
+      },
+      "display_subtitle": {
+        "text": {
+          "EN": "If you are a buyer represented by a broker, please let us know their contact information below. If you are a broker yourself, please add your company information (if applicable)."
+        }
+      }
+    }
+  ],
+  "submit_once": false
+}

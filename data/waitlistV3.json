@@ -1,0 +1,184 @@
+{
+  "id": "waitlist-V3",
+  "name": {
+    "text": {
+      "EN": "Waitlist"
+    }
+  },
+  "fields": [
+    {
+      "id": "first_name",
+      "display_name": {
+        "text": {
+          "EN": "First Name"
+        }
+      },
+      "type": 2,
+      "category_id": "generic",
+      "ui_type": 1,
+      "validation_type": 2,
+      "validation_error_message": {
+        "text": {
+          "EN": "Please enter your first name"
+        }
+      },
+      "profile_field_alias": "first_name",
+      "placeholder": {
+        "text": {
+          "EN": "Enter first name"
+        }
+      },
+      "ui_width": 1,
+      "optionality": 1
+    },
+
+    {
+      "id": "last_name",
+      "display_name": {
+        "text": {
+          "EN": "Last Name"
+        }
+      },
+      "type": 2,
+      "category_id": "generic",
+      "ui_type": 1,
+      "validation_type": 2,
+      "validation_error_message": {
+        "text": {
+          "EN": "Please enter your last name"
+        }
+      },
+      "profile_field_alias": "last_name",
+      "placeholder": {
+        "text": {
+          "EN": "Enter last name"
+        }
+      },
+      "ui_width": 1,
+      "optionality": 2
+    },
+
+    {
+      "id": "email",
+      "display_name": {
+        "text": {
+          "EN": "Email"
+        }
+      },
+      "type": 2,
+      "category_id": "generic",
+      "ui_type": 1,
+      "ui_width": 1,
+      "validation_type": 1,
+      "validation_error_message": {
+        "text": {
+          "EN": "Please enter a valid email"
+        }
+      },
+      "profile_field_alias": "email",
+      "placeholder": {
+        "text": {
+          "EN": "Email"
+        }
+      },
+      "optionality": 1
+    },
+
+    {
+      "id": "phone_number",
+      "display_name": {
+        "text": {
+          "EN": "Phone Number"
+        }
+      },
+      "type": 7,
+      "category_id": "generic",
+      "ui_type": 1,
+      "ui_width": 1,
+      "validation_type": 3,
+      "validation_regex": "/^(\\+\\s?)?(1\\s?)?([0-9]{3}|\\([0-9]{3}\\))[\\s\\-]?[0-9]{3}[\\s\\-]?[0-9]{4}$/",
+      "validation_error_message": {
+        "text": {
+          "EN": "Please enter a valid US phone number"
+        }
+      },
+      "profile_field_alias": "phone_number",
+      "placeholder": {
+        "text": {
+          "EN": "(XXX) XXX-XXXX"
+        }
+      },
+      "optionality": 2
+    },
+
+    {
+      "id": "preferred_regions",
+      "display_name": {
+        "text": {
+          "EN": "Where are you looking to live?"
+        }
+      },
+      "type": 4,
+      "category_id": "generic",
+      "ui_type": 4,
+      "validation_type": 2,
+      "validation_error_message": {
+        "text": {
+          "EN": "Please choose where you are looking to live"
+        }
+      },
+      "profile_field_alias": "preferred_regions",
+      "optionality": 1,
+      "allowed_values": [
+        {
+          "id": "silicon_value",
+          "display_name": {
+            "text": {
+              "EN": "Silicon Valley, California"
+            }
+          },
+          "value": "silicon_value",
+          "ui_width": 1
+        },
+        {
+          "id": "us_other",
+          "display_name": {
+            "text": {
+              "EN": "Somewhere else in the United States"
+            }
+          },
+          "value": "us_other",
+          "ui_width": 1
+        },
+        {
+          "id": "other",
+          "display_name": {
+            "text": {
+              "EN": "Internationally"
+            }
+          },
+          "value": "other",
+          "ui_width": 1
+        }
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "id": "generic",
+      "display_name": {
+        "text": {
+          "EN": ""
+        }
+      },
+      "display_subtitle": {
+        "text": {
+          "EN": ""
+        }
+      }
+    }
+  ],
+  "magic_link_location": "/studio/${projectId}/size",
+  "submit_once": true,
+  "unique_data_key": "email"
+}

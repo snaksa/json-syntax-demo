@@ -1,0 +1,1117 @@
+{
+  "id": "lead_qualification_form",
+  "name": {
+    "text": {
+      "EN": "Lead Qualification Form"
+    }
+  },
+  "fields": [
+    {
+      "id": "first_name",
+      "display_name": {
+        "text": {
+          "EN": "First name"
+        }
+      },
+      "type": 2,
+      "category_id": "basic_info",
+      "ui_type": 1,
+      "validation_type": 2,
+      "profile_field_alias": "first_name",
+      "placeholder": {
+        "text": {
+          "EN": "Enter first name"
+        }
+      },
+      "ui_width": 2
+    },
+    {
+      "id": "last_name",
+      "display_name": {
+        "text": {
+          "EN": "Last name"
+        }
+      },
+      "type": 2,
+      "category_id": "basic_info",
+      "ui_type": 1,
+      "validation_type": 2,
+      "profile_field_alias": "last_name",
+      "placeholder": {
+        "text": {
+          "EN": "Enter last name"
+        }
+      },
+      "ui_width": 2
+    },
+    {
+      "id": "email",
+      "display_name": {
+        "text": {
+          "EN": "Email"
+        }
+      },
+      "type": 2,
+      "category_id": "basic_info",
+      "ui_type": 1,
+      "validation_type": 1,
+      "validation_error_message": {
+        "text": {
+          "EN": "Please enter valid email"
+        }
+      },
+      "profile_field_alias": "email",
+      "placeholder": {
+        "text": {
+          "EN": "e.g. john.doe@gmail.com"
+        }
+      }
+    },
+    {
+      "id": "current_postal_code",
+      "display_name": {
+        "text": {
+          "EN": "What is the ZIP Code of your current primary home?"
+        }
+      },
+      "type": 2,
+      "category_id": "basic_info",
+      "ui_type": 1,
+      "validation_type": 3,
+      "validation_regex": "/^[0-9]{5}(?:-[0-9]{4})?$/",
+      "validation_error_message": {
+        "text": {
+          "EN": "Please enter valid ZIP Code"
+        }
+      },
+      "profile_field_alias": "current_postal_code",
+      "placeholder": {
+        "text": {
+          "EN": "Enter ZIP code"
+        }
+      }
+    },
+    {
+      "id": "current_resident_type",
+      "display_name": {
+        "text": {
+          "EN": "Is your current primary home a house or an apartment?"
+        }
+      },
+      "type": 4,
+      "category_id": "basic_info",
+      "ui_type": 6,
+      "validation_type": 2,
+      "allowed_values": [
+        {
+          "id": "single_family_home",
+          "display_name": {
+            "text": {
+              "EN": "House"
+            }
+          },
+          "value": "single_family_home"
+        },
+        {
+          "id": "multifamily_home",
+          "display_name": {
+            "text": {
+              "EN": "Apartment"
+            }
+          },
+          "value": "multifamily_home"
+        },
+        {
+          "id": "other_resident_type",
+          "display_name": {
+            "text": {
+              "EN": "Other"
+            }
+          },
+          "value": "other_resident_type"
+        }
+      ],
+      "profile_field_alias": "current_resident_type"
+    },
+    {
+      "id": "preferred_locations",
+      "display_name": {
+        "text": {
+          "EN": "Which parts of the Bay Area would you consider for your next home? Choose as many as you like."
+        }
+      },
+      "type": 5,
+      "category_id": "basic_info",
+      "ui_type": 9,
+      "validation_type": 2,
+      "validation_error_message": {
+        "text": {
+          "EN": "Please choose preferred location"
+        }
+      },
+      "allowed_values": [
+        {
+          "id": "san_jose",
+          "display_name": {
+            "text": {
+              "EN": "San Jose"
+            }
+          },
+          "value": "san_jose"
+        },
+        {
+          "id": "south_bay_area",
+          "display_name": {
+            "text": {
+              "EN": "The South Bay"
+            }
+          },
+          "value": "south_bay_area"
+        },
+        {
+          "id": "east_bay_area",
+          "display_name": {
+            "text": {
+              "EN": "The East Bay"
+            }
+          },
+          "value": "east_bay_area"
+        },
+        {
+          "id": "san_francisco",
+          "display_name": {
+            "text": {
+              "EN": "San Francisco"
+            }
+          },
+          "value": "san_francisco"
+        },
+        {
+          "id": "bay_area_peninsula",
+          "display_name": {
+            "text": {
+              "EN": "The Peninsula"
+            }
+          },
+          "value": "bay_area_peninsula"
+        }
+      ],
+      "profile_field_alias": "preferred_locations",
+      "placeholder": {
+        "text": {
+          "EN": "Select area"
+        }
+      }
+    },
+    {
+      "id": "preferred_move_in_timeframe",
+      "display_name": {
+        "text": {
+          "EN": "When are you looking to move into your next home?"
+        }
+      },
+      "type": 4,
+      "category_id": "basic_info",
+      "ui_type": 3,
+      "validation_type": 2,
+      "allowed_values": [
+        {
+          "id": "this_year",
+          "display_name": {
+            "text": {
+              "EN": "As soon as this year"
+            }
+          },
+          "value": "this_year"
+        },
+        {
+          "id": "next_year",
+          "display_name": {
+            "text": {
+              "EN": "Next year"
+            }
+          },
+          "value": "next_year"
+        },
+        {
+          "id": "next_few_years",
+          "display_name": {
+            "text": {
+              "EN": "In a few years"
+            }
+          },
+          "value": "next_few_years"
+        },
+        {
+          "id": "unsure",
+          "display_name": {
+            "text": {
+              "EN": "Not sure yet"
+            }
+          },
+          "value": "unsure"
+        }
+      ],
+      "profile_field_alias": "preferred_move_in_timeframe",
+      "placeholder": {
+        "text": {
+          "EN": "Select timeframe"
+        }
+      }
+    },
+    {
+      "id": "broker",
+      "display_name": {
+        "text": {
+          "EN": "Are you a broker / real estate agent?"
+        }
+      },
+      "type": 4,
+      "category_id": "basic_info",
+      "ui_type": 4,
+      "validation_type": 2,
+      "allowed_values": [
+        {
+          "id": "true",
+          "display_name": {
+            "text": {
+              "EN": "Yes"
+            }
+          },
+          "value": "true"
+        },
+        {
+          "id": "false",
+          "display_name": {
+            "text": {
+              "EN": "No"
+            }
+          },
+          "value": "false"
+        }
+      ]
+    },
+    {
+      "id": "representing_interested_party",
+      "display_name": {
+        "text": {
+          "EN": "Are you currently representing someone who is interested in a Nabr home?"
+        }
+      },
+      "type": 4,
+      "category_id": "basic_info",
+      "ui_type": 4,
+      "validation_type": 2,
+      "allowed_values": [
+        {
+          "id": "true",
+          "display_name": {
+            "text": {
+              "EN": "Yes"
+            }
+          },
+          "value": "true"
+        },
+        {
+          "id": "false",
+          "display_name": {
+            "text": {
+              "EN": "No"
+            }
+          },
+          "value": "false"
+        }
+      ],
+      "dependencies": [
+        {
+          "field_id": "broker",
+          "values": [
+            "true"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "preferred_unit_sizes",
+      "display_name": {
+        "text": {
+          "EN": "How many bedrooms are you looking for? Choose as many as you like."
+        }
+      },
+      "type": 5,
+      "category_id": "home_features",
+      "ui_type": 8,
+      "validation_type": 2,
+      "validation_error_message": {
+        "text": {
+          "EN": "Please enter number of bedrooms"
+        }
+      },
+      "allowed_values": [
+        {
+          "id": "studio",
+          "display_name": {
+            "text": {
+              "EN": "Studio"
+            }
+          },
+          "value": "studio"
+        },
+        {
+          "id": "one_bedroom",
+          "display_name": {
+            "text": {
+              "EN": "1 Bedroom"
+            }
+          },
+          "value": "one_bedroom"
+        },
+        {
+          "id": "two_bedroom",
+          "display_name": {
+            "text": {
+              "EN": "2 Bedroom"
+            }
+          },
+          "value": "two_bedroom"
+        },
+        {
+          "id": "three_bedroom",
+          "display_name": {
+            "text": {
+              "EN": "3 Bedroom"
+            }
+          },
+          "value": "three_bedroom"
+        }
+      ],
+      "profile_field_alias": "preferred_unit_sizes"
+    },
+    {
+      "id": "outdoor_importance",
+      "display_name": {
+        "text": {
+          "EN": "How important is it for your next home to have private outdoor space?"
+        }
+      },
+      "type": 4,
+      "category_id": "home_features",
+      "ui_type": 4,
+      "validation_type": 2,
+      "allowed_values": [
+        {
+          "id": "very_important",
+          "display_name": {
+            "text": {
+              "EN": "Very Important"
+            }
+          },
+          "value": "very_important",
+          "ui_width": 1
+        },
+        {
+          "id": "important",
+          "display_name": {
+            "text": {
+              "EN": "Important"
+            }
+          },
+          "value": "important",
+          "ui_width": 1
+        },
+        {
+          "id": "nice_to_have",
+          "display_name": {
+            "text": {
+              "EN": "Not important but nice to have"
+            }
+          },
+          "value": "nice_to_have",
+          "ui_width": 1
+        },
+        {
+          "id": "no_private_outdoor_space",
+          "display_name": {
+            "text": {
+              "EN": "I don't want private outdoor space"
+            }
+          },
+          "value": "no_private_outdoor_space",
+          "ui_width": 1
+        }
+      ]
+    },
+    {
+      "id": "parking_importance",
+      "display_name": {
+        "text": {
+          "EN": "How important is it for your next home to have on-site parking?"
+        }
+      },
+      "type": 4,
+      "category_id": "home_features",
+      "ui_type": 4,
+      "validation_type": 2,
+      "allowed_values": [
+        {
+          "id": "very_important",
+          "display_name": {
+            "text": {
+              "EN": "Very Important"
+            }
+          },
+          "value": "very_important",
+          "ui_width": 1
+        },
+        {
+          "id": "important",
+          "display_name": {
+            "text": {
+              "EN": "Important"
+            }
+          },
+          "value": "important",
+          "ui_width": 1
+        },
+        {
+          "id": "nice_to_have",
+          "display_name": {
+            "text": {
+              "EN": "Not important but nice to have"
+            }
+          },
+          "value": "nice_to_have",
+          "ui_width": 1
+        },
+        {
+          "id": "no_onsite_parking",
+          "display_name": {
+            "text": {
+              "EN": "I don't need on-site parking"
+            }
+          },
+          "value": "no_onsite_parking",
+          "ui_width": 1
+        }
+      ]
+    },
+    {
+      "id": "parking_spaces_needed",
+      "display_name": {
+        "text": {
+          "EN": "If you need parking, how many spots would you need?"
+        }
+      },
+      "type": 4,
+      "category_id": "home_features",
+      "ui_type": 6,
+      "validation_type": 2,
+      "validation_error_message": {
+        "text": {
+          "EN": "Please enter number of spots"
+        }
+      },
+      "allowed_values": [
+        {
+          "id": "1",
+          "display_name": {
+            "text": {
+              "EN": "One"
+            }
+          },
+          "value": "1"
+        },
+        {
+          "id": "2",
+          "display_name": {
+            "text": {
+              "EN": "Two"
+            }
+          },
+          "value": "2"
+        }
+      ],
+      "dependencies": [
+        {
+          "field_id": "parking_importance",
+          "values": [
+            "very_important",
+            "important",
+            "nice_to_have"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "storage_importance",
+      "display_name": {
+        "text": {
+          "EN": "How important is it for your next home to have on-site storage?"
+        }
+      },
+      "type": 4,
+      "category_id": "home_features",
+      "ui_type": 4,
+      "validation_type": 2,
+      "allowed_values": [
+        {
+          "id": "very_important",
+          "display_name": {
+            "text": {
+              "EN": "Very Important"
+            }
+          },
+          "value": "very_important",
+          "ui_width": 1
+        },
+        {
+          "id": "important",
+          "display_name": {
+            "text": {
+              "EN": "Important"
+            }
+          },
+          "value": "important",
+          "ui_width": 1
+        },
+        {
+          "id": "nice_to_have",
+          "display_name": {
+            "text": {
+              "EN": "Not important but nice to have"
+            }
+          },
+          "value": "nice_to_have",
+          "ui_width": 1
+        },
+        {
+          "id": "no_onsite_storage",
+          "display_name": {
+            "text": {
+              "EN": "I don't need on-site storage"
+            }
+          },
+          "value": "no_onsite_storage",
+          "ui_width": 1
+        }
+      ]
+    },
+    {
+      "id": "rent_own",
+      "display_name": {
+        "text": {
+          "EN": "Do you rent or own your primary home?"
+        }
+      },
+      "type": 4,
+      "category_id": "financial_info",
+      "ui_type": 4,
+      "validation_type": 2,
+      "allowed_values": [
+        {
+          "id": "rent",
+          "display_name": {
+            "text": {
+              "EN": "I rent"
+            }
+          },
+          "value": "rent"
+        },
+        {
+          "id": "own",
+          "display_name": {
+            "text": {
+              "EN": "I own"
+            }
+          },
+          "value": "own"
+        },
+        {
+          "id": "other",
+          "display_name": {
+            "text": {
+              "EN": "Other"
+            }
+          },
+          "value": "other"
+        }
+      ]
+    },
+    {
+      "id": "preferred_transaction_types",
+      "display_name": {
+        "text": {
+          "EN": "Do you intend to buy or rent your next home? Choose as many as you like."
+        }
+      },
+      "type": 5,
+      "category_id": "financial_info",
+      "ui_type": 12,
+      "validation_type": 2,
+      "validation_error_message": {
+        "text": {
+          "EN": "Please enter your intention"
+        }
+      },
+      "allowed_values": [
+        {
+          "id": "for_sale",
+          "display_name": {
+            "text": {
+              "EN": "I am looking to buy"
+            }
+          },
+          "value": "for_sale"
+        },
+        {
+          "id": "rent",
+          "display_name": {
+            "text": {
+              "EN": "I am looking to rent"
+            }
+          },
+          "value": "rent"
+        },
+        {
+          "id": "lease_purchase",
+          "display_name": {
+            "text": {
+              "EN": "I am interested in renting-to-own"
+            }
+          },
+          "value": "lease_purchase"
+        }
+      ],
+      "profile_field_alias": "preferred_transaction_types"
+    },
+    {
+      "id": "monthly_rent_target",
+      "display_name": {
+        "text": {
+          "EN": "What is your target monthly rent?"
+        }
+      },
+      "type": 4,
+      "category_id": "financial_info",
+      "ui_type": 3,
+      "validation_type": 2,
+      "allowed_values": [
+        {
+          "id": "less_2000",
+          "display_name": {
+            "text": {
+              "EN": "Below $2,000"
+            }
+          },
+          "value": "less_2000"
+        },
+        {
+          "id": "2000",
+          "display_name": {
+            "text": {
+              "EN": "$2,000 - $3,000"
+            }
+          },
+          "value": "2000"
+        },
+        {
+          "id": "3000",
+          "display_name": {
+            "text": {
+              "EN": "$3,000 - $4,000"
+            }
+          },
+          "value": "3000"
+        },
+        {
+          "id": "4000",
+          "display_name": {
+            "text": {
+              "EN": "$4,000 - $5,000"
+            }
+          },
+          "value": "4000"
+        },
+        {
+          "id": "5000",
+          "display_name": {
+            "text": {
+              "EN": "$5,000 - $6,500"
+            }
+          },
+          "value": "5000"
+        },
+        {
+          "id": "6500",
+          "display_name": {
+            "text": {
+              "EN": "Above $6,500"
+            }
+          },
+          "value": "6500"
+        }
+      ],
+      "placeholder": {
+        "text": {
+          "EN": "Select amount"
+        }
+      },
+      "dependencies": [
+        {
+          "field_id": "preferred_transaction_types",
+          "values": [
+            "rent",
+            "lease_purchase"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "purchase_price_target",
+      "display_name": {
+        "text": {
+          "EN": "What is your target purchase price?"
+        }
+      },
+      "type": 4,
+      "category_id": "financial_info",
+      "ui_type": 3,
+      "validation_type": 2,
+      "allowed_values": [
+        {
+          "id": "less_600000",
+          "display_name": {
+            "text": {
+              "EN": "Below $600,000"
+            }
+          },
+          "value": "less_600000",
+          "ui_width": 1
+        },
+        {
+          "id": "600000",
+          "display_name": {
+            "text": {
+              "EN": "$600,000 - $800,000"
+            }
+          },
+          "value": "600000",
+          "ui_width": 1
+        },
+        {
+          "id": "800000",
+          "display_name": {
+            "text": {
+              "EN": "$800,000 - $1,000,000"
+            }
+          },
+          "value": "800000",
+          "ui_width": 1
+        },
+        {
+          "id": "1000000",
+          "display_name": {
+            "text": {
+              "EN": "$1,000,000 - $1,200,000"
+            }
+          },
+          "value": "1000000",
+          "ui_width": 1
+        },
+        {
+          "id": "1200000",
+          "display_name": {
+            "text": {
+              "EN": "$1,200,000 - $1,500,000"
+            }
+          },
+          "value": "1200000",
+          "ui_width": 1
+        },
+        {
+          "id": "1500000",
+          "display_name": {
+            "text": {
+              "EN": "Above $1,500,000"
+            }
+          },
+          "value": "1500000",
+          "ui_width": 1
+        }
+      ],
+      "placeholder": {
+        "text": {
+          "EN": "Select amount"
+        }
+      },
+      "dependencies": [
+        {
+          "field_id": "preferred_transaction_types",
+          "values": [
+            "for_sale",
+            "lease_purchase"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "started_saving",
+      "display_name": {
+        "text": {
+          "EN": "Have you already started saving for a down payment?"
+        }
+      },
+      "type": 4,
+      "category_id": "financial_info",
+      "ui_type": 4,
+      "validation_type": 2,
+      "allowed_values": [
+        {
+          "id": "yes",
+          "display_name": {
+            "text": {
+              "EN": "Yes"
+            }
+          },
+          "value": "yes"
+        },
+        {
+          "id": "no",
+          "display_name": {
+            "text": {
+              "EN": "No"
+            }
+          },
+          "value": "no"
+        }
+      ],
+      "dependencies": [
+        {
+          "field_id": "preferred_transaction_types",
+          "values": [
+            "for_sale",
+            "lease_purchase"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "research_optin",
+      "display_name": {
+        "text": {
+          "EN": "Are you interested in participating in future research relating to interiors, features, and pricing for Nabr Homes?"
+        }
+      },
+      "type": 4,
+      "category_id": "misc",
+      "ui_type": 4,
+      "validation_type": 2,
+      "allowed_values": [
+        {
+          "id": "yes",
+          "display_name": {
+            "text": {
+              "EN": "Yes"
+            }
+          },
+          "value": "yes"
+        },
+        {
+          "id": "no",
+          "display_name": {
+            "text": {
+              "EN": "No"
+            }
+          },
+          "value": "no"
+        }
+      ]
+    },
+    {
+      "id": "lead_channel",
+      "display_name": {
+        "text": {
+          "EN": "How did you hear about Nabr?"
+        }
+      },
+      "type": 4,
+      "category_id": "misc",
+      "ui_type": 4,
+      "validation_type": 2,
+      "allowed_values": [
+        {
+          "id": "Google",
+          "display_name": {
+            "text": {
+              "EN": "Google"
+            }
+          },
+          "value": "Google",
+          "ui_width": 3
+        },
+        {
+          "id": "Email",
+          "display_name": {
+            "text": {
+              "EN": "Email"
+            }
+          },
+          "value": "Email",
+          "ui_width": 3
+        },
+        {
+          "id": "News",
+          "display_name": {
+            "text": {
+              "EN": "News"
+            }
+          },
+          "value": "News",
+          "ui_width": 3
+        },
+        {
+          "id": "Digital_Ad",
+          "display_name": {
+            "text": {
+              "EN": "Digital Ad"
+            }
+          },
+          "value": "Digital_Ad",
+          "ui_width": 3
+        },
+        {
+          "id": "Social_Media",
+          "display_name": {
+            "text": {
+              "EN": "Social Media"
+            }
+          },
+          "value": "Social_Media",
+          "ui_width": 3
+        },
+        {
+          "id": "Word_of_Mouth",
+          "display_name": {
+            "text": {
+              "EN": "Word of Mouth"
+            }
+          },
+          "value": "Word_of_Mouth",
+          "ui_width": 3
+        },
+        {
+          "id": "Broker",
+          "display_name": {
+            "text": {
+              "EN": "Broker"
+            }
+          },
+          "value": "Broker",
+          "ui_width": 3
+        },
+        {
+          "id": "Other",
+          "display_name": {
+            "text": {
+              "EN": "Other (please describe)"
+            }
+          },
+          "value": "Other",
+          "ui_width": 3
+        }
+      ]
+    },
+    {
+      "id": "lead_channel_other",
+      "display_name": {
+        "text": {
+          "EN": "How did you hear about Nabr?"
+        }
+      },
+      "type": 2,
+      "category_id": "misc",
+      "ui_type": 2,
+      "validation_type": 2,
+      "validation_error_message": {
+        "text": {
+          "EN": "Please enter a response"
+        }
+      },
+      "dependencies": [
+        {
+          "field_id": "lead_channel",
+          "values": [
+            "Other"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "additional_info",
+      "display_name": {
+        "text": {
+          "EN": "Is there anything else you'd like to share with us today? (optional)"
+        }
+      },
+      "type": 2,
+      "category_id": "misc",
+      "ui_type": 2
+    }
+  ],
+  "categories": [
+    {
+      "id": "basic_info",
+      "display_name": {
+        "text": {
+          "EN": "Basic info"
+        }
+      },
+      "display_subtitle": {
+        "text": {
+          "EN": "The survey should take 5 minutes to complete, and the information will be used to help match you with a Nabr Home. Feel free to edit any responses that were pre-populated."
+        }
+      }
+    },
+    {
+      "id": "home_features",
+      "display_name": {
+        "text": {
+          "EN": "Home features"
+        }
+      },
+      "display_subtitle": {
+        "text": {
+          "EN": "These questions will help us understand some of the basic features you need in your Nabr Home."
+        }
+      }
+    },
+    {
+      "id": "financial_info",
+      "display_name": {
+        "text": {
+          "EN": "Financial info"
+        }
+      },
+      "display_subtitle": {
+        "text": {
+          "EN": "Next, we'll ask you about your financial preferences, in order to match you with a Nabr Home that is within your target budget."
+        }
+      }
+    },
+    {
+      "id": "misc",
+      "display_name": {
+        "text": {
+          "EN": "Misc"
+        }
+      },
+      "display_subtitle": {
+        "text": {
+          "EN": "We have a few more questions for you today. We depend on your input to build thriving urban communities, and there will be lots of opportunities for us to collaborate in the future."
+        }
+      }
+    }
+  ],
+  "require_authentication": true,
+  "remove_magic_link_location": "questionnaire"
+}
