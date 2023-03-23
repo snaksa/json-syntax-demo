@@ -8,6 +8,6 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - id: myValidator
-        uses: snaksa/json-syntax-validator/innerfolder@main
+        uses: snaksa/json-syntax-validator@main
         with:
           paths: './data/*.json'

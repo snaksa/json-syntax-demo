@@ -7,6 +7,6 @@ jobs:
     name: Validate JSON sytax
     steps:
       - uses: actions/checkout@v3
-      - uses: snaksa/json-syntax-validator/innerfolder@main
+      - uses: snaksa/json-syntax-validator@main
         with:
           paths: './data/success.json'
